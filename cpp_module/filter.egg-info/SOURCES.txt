@@ -4,4 +4,5 @@ setup.py
 filter.egg-info/PKG-INFO
 filter.egg-info/SOURCES.txt
 filter.egg-info/dependency_links.txt
+filter.egg-info/not-zip-safe
 filter.egg-info/top_level.txt

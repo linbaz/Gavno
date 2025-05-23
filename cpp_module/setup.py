@@ -1,18 +1,15 @@
 from setuptools import setup, Extension
-import pybind11
+from pybind11.setup_helpers import Pybind11Extension
 
 ext_modules = [
-    Extension(
+    Pybind11Extension(
         "filter",
         ["filter.cpp"],
-        include_dirs=[pybind11.get_include()],
-        language="c++"
     ),
 ]
 
 setup(
     name="filter",
-    version="0.1",
-    author="Your Name",
     ext_modules=ext_modules,
+    zip_safe=False,
 )

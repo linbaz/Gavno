@@ -7,7 +7,7 @@ def generate_config():
     room_id = f"room_{h % 10000}"
     filters = ["blur", "invert", "edge_detect", "emboss"]
     selected = [filters[i % len(filters)] for i in range(h % len(filters) + 1)]
-    with open('config.py', 'w', encoding='utf-8') as f:
+    with open('config13123.py', 'w', encoding='utf-8') as f:
         f.write(f'ROOM_ID = "{room_id}"\n')
         f.write(f'FILTERS = {selected}\n')
         f.write('THEME = "light"\n')
